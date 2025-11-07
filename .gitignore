@@ -1,0 +1,27 @@
+# n8n data
+n8n_data/
+.n8n/
+
+# Workflows backup (ถ้าไม่ต้องการ commit)
+# workflows/*.json
+
+# Environment files
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
