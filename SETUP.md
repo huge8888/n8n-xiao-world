@@ -120,7 +120,11 @@ curl: (7) Failed to connect to localhost port 18060: Connection refused
 
 ```bash
 # ใช้ Docker Compose (แนะนำ)
-cd examples/n8n
+# Clone repo (ถ้ายังไม่ได้ clone)
+git clone https://github.com/huge8888/n8n-xiao-world.git
+cd n8n-xiao-world
+
+# รัน n8n
 docker-compose up -d
 
 # หรือใช้ Docker โดยตรง
@@ -278,11 +282,14 @@ curl http://localhost:18060/mcp -X POST \
 ## Files
 
 ```
-examples/n8n/
-├── README.md                      # เอกสารนี้
+n8n-xiao-world/
+├── README.md                      # Overview
+├── SETUP.md                       # เอกสารนี้ (Quick setup)
+├── GUIDE.md                       # คู่มือละเอียด
 ├── docker-compose.yml             # Docker setup สำหรับ n8n
-├── xiao-world-workflow.json       # Workflow พร้อมใช้งาน
-└── images/                        # Screenshots (optional)
+├── workflows/
+│   └── xiao-world-workflow.json   # Workflow พร้อมใช้งาน
+└── images/                        # Screenshots
 ```
 
 ---

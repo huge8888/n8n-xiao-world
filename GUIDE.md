@@ -91,8 +91,9 @@ curl http://localhost:18060/mcp -X POST \
 #### วิธีที่ 1: ใช้ Docker Compose (แนะนำ! ⭐)
 
 ```bash
-# 1. เข้าไปในโฟลเดอร์ examples/n8n
-cd examples/n8n
+# 1. Clone repository (ถ้ายังไม่ได้ clone)
+git clone https://github.com/huge8888/n8n-xiao-world.git
+cd n8n-xiao-world
 
 # 2. รัน n8n
 docker-compose up -d
@@ -141,7 +142,7 @@ http://localhost:5678
 
 2. **เลือกไฟล์:**
    ```
-   examples/n8n/xiao-world-workflow.json
+   workflows/xiao-world-workflow.json
    ```
 
 3. **คลิก Import** ✅
@@ -415,7 +416,7 @@ docker run --rm -v n8n_data:/data -v $(pwd):/backup \
 **วิธีที่ 3: เก็บใน Git**
 ```bash
 # เก็บ workflow ไว้ใน repo
-git add examples/n8n/workflows/
+git add workflows/
 git commit -m "backup workflows"
 git push
 ```
